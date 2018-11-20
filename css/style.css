@@ -1,0 +1,83 @@
+       /** BASE STYLE **/   
+    section:hover,:active ,:visited{
+        border: 1px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        color: white;
+    }
+    .bg-info, .btn-info {
+         color: #0475ba;
+    }
+   /** **/
+ /** HEADER **/  
+ #header {  
+     background-image:url("../img/header.jpg");
+     background-color: black;
+     min-height: 700px;
+    
+     color: white;
+     padding-top: 160px;
+
+ }
+ h2{
+    text-align:center;
+ }
+p{
+    font-size: 1em;
+}
+form{
+    background-color: white;
+    color: #000;
+    padding-top: 40px;
+    padding-bottom: 40px; 
+    padding-left: 30px ;
+    padding-right: 30px;
+    border-radius: 10p;
+}
+/** sections **/  
+#students p
+ {
+    color: white;
+    margin-inline-start: 100px;
+}
+#students img{
+    border-radius: 5px;
+   
+
+}
+#volunteers
+ {
+    margin-inline-start: 100px;
+    text-align:center;
+    text-layout: auto;
+    padding: 20px;
+ }
+
+
+/** team **/
+#team-member
+{
+    text-align:center;
+}
+.team-member 
+img
+  {       
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px red, -1em 0 .4em rgb(128, 0, 43);
+}
+h6{
+    color: #0475ba;
+}
+/** PIED DE PAGE **/
+#footer{
+    padding-top: 60px;
+    padding-bottom:60px;
+    margin: 25px;
+}
+ ul{
+    list-style:none;
+    margin: 10px;
+}

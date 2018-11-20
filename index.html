@@ -2,91 +2,169 @@
 <html>
 
 <head>
-
-    <title>Konexio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <title>Konexio</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
 
 <body>
 
+    <nav class=" navbar navbar-expand-lg bg-info fixed-top ">
 
-    <section id="#header">
-        <div class="container"></div>
-        <div class="row"> </div>
-        <h1>Konexio<h1>
-                <p>Aider les réfugées à s'intégrer grâce au numérique</p>
-                <button>Je veux étudier</button>
-                <ul>
-                    <li>
-                        <a href="#studentsEtudiant">students</a></li>
-                    <li> <a href="#volunteers">Benevoles</a></li>
-                    <li> <a href="#gallary">EBN</a></li>
-                    <li> <a href="#team">Equipe</a>
-                    </li>
-                </ul>
-    </section>
-    <!-- /section -->
-    <section id="#students">
+        <h2> <a class="navbar-brand" href="#header">konexio</a></h2>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li>
+                    <a class="nav-link" href="#students">Etudiants</a>
+                </li>
+                <li> <a class="nav-link" href="#volunteers">Bénévoles</a>
+                </li>
+                <li> <a class="nav-link" href="#gallary">Les EBN</a>
+                </li>
+                <li> <a class="nav-link" href="#team">L'équipe</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="header">
         <div class="container">
-            <div class="row"> </div>
-            <img src="./img/student.jpg" alt="Etudiant à Konexio">
-            <p> Apprenez à utiliser un ordinateur,
-                les outils de bureautiques ou à programmer.
-                Chacune de nos formations aboutit à une certification</p>
-            <button>Je veux étudier</button>
-        </div>
-        </div>
-    </section>
-    <!-- /section#students -->
-    <section id="#volunteers">
-        <div class="contanier">volunteers</div>
-        <div class="row"> </div>
-        <button>Je veux étudier</button>
-        <img src="./img/volunteer.jpg" alt="Professeur à Konexio">
-        <p>
-            Vous avez envie d'aider des personnes qui cherchent à apprendre et à s'intégrer ? Si vous avez des
-            connaissances en informatique de bureau,
-            sur Excel ou en programmation, envoyez nous un message
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>
+                        Konexio
+                    </h1>
+                    <p>
+                        <h3>aide les réfugées à s'intégrer grâce au numérique</h3>
+                    </p>
+                </div>
+                <aside class="col-lg-4">
 
-        </p>
-        </div>
+                    <form action="index.html">
+                        <h4>Programme Digistart</h4>
+                        <label for="S'inscrire à la prochine session "> S'inscrire à la prochine session</label>
+                        <select name="month" class="custom-select">
+                            <option value="">choisir </option>
+                            <option value="Janvier">Janvier</option>
+                            <option value="Mars">Mars</option>
+                            <option value="Juin">Juin</option>
+                            <option value="Septembre">Septembre</option>
+                        </select>
+                        <button type="submit" class="btn btn-info">m'inscrire</button>
+                    </form>
+                </aside>
+            </div>
         </div>
     </section>
-    <section id="#gallery">
-        <div class="contaier"> 
-        <div class="row"> 
-        <img src="gallery1.jpg" alt="gallery1.jpg">
-        <img src="gallery2.jpg" alt="img">
-        <img src="gallery3.jpg." alt="img">
-    </div>
-    </div>
-    </section>
-        <section  id="#team">
-            <div class="team-member">
-                <img src="jean.jpg" >
-            <h4>Jean Guo </h4>
-            <h6>Fondatrice et gérante</h6>
-           
+    <!-- /section#students-->
+    <div id="students">
+        <section class="bg-info " id="students">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <img class="img-fluid" src="./img/student.jpg" alt="Etudiant à Konexio" />
+
+                    </div>
+                    <div class="col-6">
+                        <p> Apprenez à utiliser un ordinateur,
+                            les outils de bureautiques ou à programmer.
+                            Chacune de nos formations aboutit à une certification</p>
+                        <button class="btn btn-outline-light">Je veux étudier</button>
+                    </div>
+                </div>
             </div>
-            
         </section>
-        <section id="team">
-            <div class="team-member">
-            <img src="binta.jpg" alt="img">
-            <h4>Binta Jammeh</h4>
-            <h6>Directrice des programmes</h6>
-            
+    </div>
+    <!-- /section#students -->
+    <div class="container" id="volunteers">
+        <div class="row">
+            <div class="col-6">
+                <p>
+                    Vous avez envie d'aider des personnes qui cherchent à apprendre et à s'intégrer ?
+                    Si vous avez des connaissances en informatique de bureau,
+                    sur Excel ou en programmation, envoyez nous un message
+                </p>
+
+                <button class="btn btn-outline-dark"> Je veux éider</button>
+            </div>
+            <div class="col-6">
+                <img src="./img/volunteer.jpg" class="img-fluid" />
+            </div>
         </div>
-        </section>
-            <div class="team-member">
-            <img src="denis.jpg" alt="img">
-            <h4>Denis Robert</h4>
-            <h6>Formateur</h6>
-            
+    </div>
+
+    <!-- section.volunteers -->
+    <div class=" contaier bg-info" id="gallary ">
+        <div class="row">
+            <div class="col-4 offset-4">
+                <img class="img-fluid" src="./img/gallery/gallery1.jpg" />
+                <img class="img-fluid" src="./img/gallery/gallery2.jpg" />
+                <img class="img-fluid" src="./img/gallery/gallery3.jpg" />
             </div>
-        </section>
-            <div class="team-member-col-4>">Jean</div>
-            <div class="team-member-col-4>">Binta</div>
-            <div class="team-member-col-4>">Denis</div>
+        </div>
+    </div>
+    <!-- fin section.gallery -->
+    <section class="team-member container">
+        <div class="row">
+            <div class="col-12">
+                <h2>L'équipe</h2>
+            </div>
+            <div class="col-4 team-member">
+                <img src="./img/people/jean.jpg" />
+                <h4>Jean Guo </h4>
+                <h6>Fondatrice et gérante</h6>
+            </div>
+            <!-- /div.team-member -->
+            <div class="col-4 team-member">
+                <img src="./img/people/binta.jpg" />
+                <h4>Binta Jammeh</h4>
+                <h6>Directrice des programmes</h6>
+            </div>
+            <!-- /div.team-member -->
+            <div class="col-4 team-member">
+                <img src="./img/people/denis.jpg" />
+                <h4>Denis Robert</h4>
+                <h6>Formateur</h6>
+            </div>
+            <!-- /div.team-member -->
+        </div>
+
+    </section>
+    <!-- section.team -->
+    <footer class="bg-info">
+        <div class="container">
+            <div class="row">
+                <div class="footer-list col-6">
+                    <h3>Konexio</h3>
+                    <ul>
+                        <li> <a href="">Mentions légales</a> </li>
+                        <li> <a href="">Vie privée</a></li>
+                        <li> <a href="">Conditions d'utilisations </a></li>
+                    </ul>
+                </div>
+                <!-- fin info 1 -->
+                <div class="footer-list col-6">
+                    <h3>Réseaux sociaux</h3>
+
+                    <ul>
+
+                        <li> <a href="">
+                                <i class="fab fa-instagram"></i>Instagram</a>
+                        </li>
+                        <li> <a href="">
+                                <i class="fab fa-twitter"></i>Twitter</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fab fa-facebook"></i>Facebook </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
